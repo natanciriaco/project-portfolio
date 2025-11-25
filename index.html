@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <title>Projeto - Meu Portifólio</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>College Group</h1>
+            <p>Desenvolvedores Front-End</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="section" id="sobre">
+            <h2>Sobre o grupo</h2>
+            <p>
+                Olá, seja bem vindo ao nosso portifólio! Nós somos um grupo de desenvolvedores apaixonados por criar interfaces web intuitivas e responsivas. Utilizamos, HTML, CSS e Javascript como base, juntamente com React e um pré-processador CSS, como o Sass.
+            </p>
+        </section>
+
+        <section class="section" id="projetos">
+            <h2>Nossos Projetos</h2>
+            <div class="carousel-container">
+                <div class="carousel-track">
+                    <div class="project-item active">
+                        <a href="https://natanciriaco.github.io/weather-app/" target="_blank" aria-label="Ver Projeto Previsão do Tempo">
+                            <img src="images/weather-thumb.jpg" alt="Capa do Projeto Previsão do Tempo">
+                            <div class="project-info">
+                                <h3>Previsão do Tempo</h3>
+                                <p>Nesta solução o usuário é capaz de pesquisar qualquer lugar do mundo a fim de saber suas condições climáticas. Desenvolvido utilizando Vanilla Js.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="project-item">
+                        <a href="https://projeto-lol-login-gke7uxksc-natanciriacos-projects.vercel.app/" target="_blank" aria-label="Ver Projeto LOL">
+                            <img src="images/lol-thumb.jpg" alt="Capa do Projeto Tela de Login LOL">
+                            <div class="project-info">
+                                <h3>League of Legends Login</h3>
+                                <p>Este projeto apresenta uma réplica da tela de login do jogo League of Legends. Desenvolvido principalmente utilizando React com Vercel e Sass.
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="project-item">
+                        <a href="https://natanciriaco.github.io/projeto-xadrez/" target="_blank" aria-label="Ver Projeto Xadrez">
+                            <img src="images/chess-thumb.jpg" alt="Capa do Projeto Xadrez">
+                            <div class="project-info">
+                                <h3>Xadrez</h3>
+                                <p>Nesta solução o usuário visualiza um tabuleiro de xadrez, ele é capaz de mudar as peças de lugar e também contar quantas de cada existem no tabuleiro. Desenvolvido com Vanilla Js.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-controls">
+                <button id="prevBtn" aria-label="Projeto anterior">❮</button>
+                <button id="nextBtn" aria-label="Próximo projeto">❯</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 College Group. Todos os direitos reservados.
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

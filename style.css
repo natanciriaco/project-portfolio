@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #2C3E50;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    overflow: auto;
+    padding: 0 20px;
+}
+
+header {
+    background: #2C3E5033;
+    color: #6A0DAD;
+    padding: 1rem 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.section {
+    background:#E6E6FA;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-container {
+    overflow: hidden; /* Esconde os projetos que não estão ativos */
+    width: 100%;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+h2 {
+    color: #6A0DAD;
+    margin-bottom: 10px;
+}
+
+.project-item {
+    flex: 0 0 100%;
+    margin-bottom: 0;
+    border-left: 4px solid #6A0DAD;
+    padding: 10px;
+}
+
+.project-item a{
+    text-decoration: none; 
+    color: #2C3E50; 
+    display: block; 
+    border-radius: 8px;
+    overflow: hidden; 
+    background-color: #FFFFFF; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-item a:hover{
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.project-item img{
+    display: block;
+    width: 100%;
+    height: 370px; 
+    object-fit: cover; 
+}
+
+.project-info{
+    padding: 15px;
+    border-left: 4px solid #6A0DAD;
+}
+
+.project-info h3{
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.carousel-controls {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.carousel-controls button {
+    background: #6A0DAD;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    margin: 0 5px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.carousel-controls button:hover {
+    background: #4A057A;
+}
+
+.project-item h3 {
+    color: #2C3E50;
+}
+
+footer {
+    text-align: center;
+    background: #21193d;
+    color: #fff;
+    padding: 1rem 0;
+    margin-top: 20px;
+}
